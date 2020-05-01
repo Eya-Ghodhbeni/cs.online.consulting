@@ -369,7 +369,11 @@
     });
   });
   </script>
-
+  <script>
+    jQuery.htmlPrefilter = function( html ) {
+        return html;
+    };
+</script>
 
 </body>
 </html>
