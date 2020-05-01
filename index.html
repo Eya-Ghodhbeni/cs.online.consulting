@@ -19,34 +19,34 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="styelsheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    
     <link rel="stylesheet" href="CSS/styles.css">
     
     <title>CS Consulting</title>
 </head>
 <body>
      <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <a class="navbar-brand mr-auto js-scroll-trigger text-white" href="#masthead">CS Online Consulting</a>        
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
             </button>
-           <a class="navbar-brand mr-auto" href="#">CS Online Consulting</a>
-           <div class="row">
            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#"> Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sectors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger text-white" href="#masthead">Home</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger text-white" href="#team"> Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#sectors">Sectors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger text-white" href="#contact"> Contact</a></li>
                 </ul> 
             </div>  
-            </div>           
+                       
         </div>
     </nav>
     <!-- Masthead-->
 
-        <header class="masthead" >
+        <header class="masthead" data-stellar-background-ratio="0.5" id="masthead" style="background-image: url(assets/img/bg-masthead.jpg);" data-stellar-background-ratio="0.5">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
@@ -75,7 +75,7 @@
                     <p class="text-white-50 mb-4">At CS Consulting we provide a full suite of productivity and collaboration tools to enable businesses to leverage all the benefits of having remote workforce.</p>
 
 
-                    <p>Book a free consultation to talk to our of our consultants and start working from home in 48 hours</p>
+                    <p>Book a free consultation to talk to one of our consultants and start working from home in 48 hours</p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                 </div>
             </div>
@@ -83,12 +83,12 @@
     </section>
 
     <!-- Team -->
-    <section class="home-section" id="team">
+    <section id="team" class="home-section ftco-section ftco-intro ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(assets/img/bg_3.jpg);" data-stellar-background-ratio="0.5">
         <div class="container h-60">
         <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-offset-2 col-md-8">
             <div class="section-heading">
-                <h2>Our Team</h2>
+                <h2>Meet our Team</h2>
                 <hr class="divider my-4" />
                 <p class="font-weight-light">Description</p>
             </div>
@@ -99,28 +99,28 @@
             <div class="box-team">
                 <img src="assets/img/team/1.jpg" alt="" class="rounded-circle img-fluid rounded"/>
                 <h4 class="font-weight-light">Dominique Vroslav</h4>
-                <p class="font-weight-light">manager</p>
+                <p class="font-weight-light">Manager</p>
             </div>
             </div>
             <div class="col-sm-3">
             <div class="box-team">
                 <img src="assets/img/team/2.jpg" alt="" class="rounded-circle img-fluid rounded" />
-                <h4 class="font-weight-light">Thomas Jeffersonn</h4>
-                <p class="font-weight-light">senior consultant</p>
+                <h4 class="font-weight-light">Nola Maurin</h4>
+                <p class="font-weight-light">Meetings Manager</p>
             </div>
             </div>
             <div class="col-md-3">
             <div class="box-team">
                 <img src="assets/img/team/3.jpg" alt="" class="rounded-circle img-fluid rounded" />
-                <h4 class="font-weight-light">Nola Maurin</h4>
-                <p class="font-weight-light">IT consultant</p>
+                <h4 class="font-weight-light">Thomas Jeffersonn</h4>
+                <p class="font-weight-light">IT Consultant</p>
             </div>
             </div>
             <div class="col-md-3">
             <div class="box-team">
                 <img src="assets/img/team/4.jpg" alt="" class="rounded-circle img-fluid rounded" />
                 <h4 class="font-weight-light">Mira Ladovic</h4>
-                <p class="font-weight-light">consulting expert</p>
+                <p class="font-weight-light">Consulting Expert</p>
             </div> 
             </div>
         </div>
@@ -131,7 +131,7 @@
     <section class="page-section" id="services">
         <div class="container h-60">
             <h2 class="text-center mt-0">At Your Service</h2>
-            <hr class="divider my-4" />
+            <hr class="divider light my-4" id="hrsection2"/>
             <div class="row">
                 <div class=" col-md-3 text-center">
                     <div class="mt-5">
@@ -144,21 +144,21 @@
                     <div class="mt-5">
                         <i class="fas fa-4x fa-handshake text-primary mb-4"></i>
                         <h3 class="h5 mb-2">professional development</h3>
-                        <p class="text-muted mb-0">we help them develop their ideas</p>
+                        <p class="text-muted mb-0">we help you develop your ideas</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-chart-line text-primary mb-4"></i>
-                        <h3 class="h5 mb-2">Strategy and growth</h3>
-                        <p class="text-muted mb-0">We make the ideal strategy for their projects</p>
+                        <h3 class="h5 mb-2">Marketing Strategy</h3>
+                        <p class="text-muted mb-0">We make the ideal strategy for the growth  of your project</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-lightbulb text-primary mb-4"></i>
                         <h3 class="h5 mb-2">Solution</h3>
-                        <p class="text-muted mb-0">We give the best solutions for their business
+                        <p class="text-muted mb-0">We give the best solutions for your business
                         </p>
                     </div>
                 </div>
@@ -167,14 +167,19 @@
     </section>
 
     <!--sectors-->
-    <section id="portfolio">
-        <div class="container-fluid p-0">
+    <section id="portfolio" class="ftco-section ftco-intro ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(assets/img/bg_1.jpg);" data-stellar-background-ratio="0.5">
+            <h2 class="text-center mt-0">Sectors</h2>
+            <hr class="divider my-4" />
+            <div class="col-md-12">
+                
+            </div>
+        <div class="container-fluid p-0" id="sectors">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-category text-white-50">Banking</div>
                             <div class="project-name">E-Banking</div>
                         </div></a
                     >
@@ -183,7 +188,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-category text-white-50">Commerce</div>
                             <div class="project-name">E-Commerce</div>
                         </div></a
                     >
@@ -192,7 +197,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-category text-white-50">HR</div>
                             <div class="project-name">Telecommunication</div>
                         </div></a
                     >
@@ -201,7 +206,7 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-category text-white-50">Business</div>
                             <div class="project-name">SEO</div>
                         </div></a
                     >
@@ -210,16 +215,15 @@
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Design</div>
-                        </div></a
-                    >
+                            <div class="project-category text-white-50">Design</div>
+                            <div class="project-name">Graphic Design</div>
+                        </div></a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg"
                         ><img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
                         <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50">Category</div>
+                            <div class="project-category text-white-50">IT</div>
                             <div class="project-name">Web & Mobile development</div>
                         </div></a
                     >
@@ -227,6 +231,136 @@
             </div>
         </div>
     </section>
-    
+    <!--COntact-->
+
+    <section id="contact" class="ftco-section ftco-intro ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(assets/img/bg_1.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row justify-content-end">
+    			<div class="col-md-6 py-5 px-md-5">
+    				<div class="py-md-5">
+		          <div class="heading-section heading-section-white ftco-animate mb-5">
+		            <h2 class="mb-4 text-white">Request A Quote</h2>
+		            <p class="text-white">Ready to start your next project with us? Give us a call or send us a request and we will get back to you as soon as possible!</p>
+		          </div>
+		          <form action="#" class="appointment-form ftco-animate">
+		    				<div class="d-md-flex">
+			    				<div class="form-group">
+			    					<input type="text" class="form-control" placeholder="First Name">
+			    				</div>
+			    				<div class="form-group ml-md-4">
+			    					<input type="text" class="form-control" placeholder="Last Name">
+			    				</div>
+		    				</div>
+		    				<div class="d-md-flex">
+		    					<div class="form-group">
+			    					<div class="form-field">
+		        					<div class="select-wrap">
+		                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+		                    <select name="" id="" class="form-control">
+		                    	<option value="">Select Guidance</option>
+                              <option value="">Finance</option>
+                              <option value="">Design</option>
+		                      <option value="">Branding</option>
+		                      <option value="">Business</option>
+		                      <option value="">IT</option>
+		                      <option value="">HR and communication</option>
+		                      <option value="">Other Services..</option>
+		                    </select>
+		                  </div>
+			              </div>
+			    				</div>
+		    					<div class="form-group ml-md-4">
+			    					<input type="text" class="form-control" placeholder="Phone">
+			    				</div>
+		    				</div>
+		    				<div class="d-md-flex">
+		    					<div class="form-group">
+			              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+                        </div>
+			            <div class="form-group ml-md-4">
+			              <input type="submit" value="Request A Quote" class="btn btn-white py-3 px-4">
+                        </div>
+		    			</div>
+		    			</form>
+		    		</div>
+    			</div>
+        </div>
+    	</div>
+    </section>
+        <!--footer-->
+        <footer> 
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.2135455713487!2d10.186559550591657!3d36.861307071859265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb4b0dad56d3%3A0x5efe8ff5c69365dd!2sHigher%20Institute%20Of%20Computer%20Science%20Ariana!5e0!3m2!1sfr!2stn!4v1588273538648!5m2!1sfr!2stn" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            <p>
+            </div>
+            <div class="col-md-6 ml-auto">
+                <div class="row">
+                <ul class="list-unstyled">
+                    <li><span class="fas fa-envelope"></span> contact@csconsulting.com</li>
+                    <li><span class="fas fa-phone-alt"></span> +216 123456789</li>
+                    <li><span class="fas fa-map-marker-alt"></span> Ariana, Tunisia</li>
+                </ul>
+                </div>
+                <div class="social">
+                    <a href=""><span class="fa-stack ">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                    <a href=""><span class="fa-stack">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                    <a href=""><span class="fa-stack">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by <a href="#" target="_blank">EG Dev</a>
+            </p>
+    </footer>
+
+<!--scripts-->
+    <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+  <script>$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+  </script>
+
+
 </body>
 </html>

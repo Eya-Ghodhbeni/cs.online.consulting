@@ -40,19 +40,19 @@
   --font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
-header.masthead {
-  height: 100%;
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.fixed-top {
+  color: #fff ;
 }
+.fixed-top.scrolled {
+  background-color: #504644 !important;
+  transition: background-color 200ms linear;
+  opacity: 0.9;
+}
+
 
 header.masthead h1 {
   font-size: 2.25rem;
+  color: floralwhite !important;
 }
 
 /*borders*/
@@ -63,6 +63,11 @@ hr.divider {
 }
 hr.light {
   border-color: #504644;
+}
+.page-section #services hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: floralwhite;
 }
 
 /*texts*/
@@ -101,23 +106,38 @@ hr.light {
   background-color: #BCAAA6;
   border-color: #BCAAA6;
 }
-
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead h1 {
+  font-size: 3rem;
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
-
   }
   header.masthead p {
     font-size: 1.15rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   header.masthead h1 {
     font-size: 3rem;
   }
 }
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (min-width: 720px){
   .box-team {
 		margin-bottom: 30px;
@@ -128,14 +148,6 @@ hr.light {
   
 }
 
-@media (min-width: 1200px) {
-  header.masthead h1 {
-    font-size: 3.5rem;
-  }
-  header.masthead p {
-    color: floralwhite;
-  }
-}
 .home-section p {
    font-size: 1.15rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -143,7 +155,7 @@ hr.light {
 
 .page-section {
   width: 100%;
-  padding: 150px 0px 150px 0px;
+  padding: 120px 0px 120px 0px;
   background-color: floralwhite;
 
 }
@@ -235,4 +247,54 @@ hr.light {
 .portfolio-box img {
   width: 100%;
   height: 100%;
+}
+#portfolio {
+  width: 100%;
+  padding: 70px 0px 0px 0px;
+  background-color: #504644;
+}
+#portfolio h2 {
+  color: floralwhite;
+}
+.container-fluid{
+  margin-top: 50px;
+}
+
+  .ftco-intro {
+    position: relative;
+    padding: 3em 0;
+    z-index: 0; }
+    .ftco-intro:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: '';
+      z-index: -1;
+      opacity: 0.8;
+      background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1566ad', endColorstr='#1b9de3', GradientType=1 );} 
+    .ftco-intro .btn {
+      width: 100%; }
+    .ftco-intro h2 {
+      line-height: 1.2; }
+      #background-image {
+        width: 100%;
+        height: 100%;
+      }
+      
+
+@media (max-width:480px ){
+iframe {
+  width: 100%;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  margin-left: 0rem;
+margin-right: 0rem;
+}
+ }
+.fa-stack{
+  display: inline-block;
+  vertical-align: middle;
 }
